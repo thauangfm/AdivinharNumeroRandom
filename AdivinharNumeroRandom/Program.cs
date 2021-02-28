@@ -6,6 +6,8 @@ namespace AdivinharNúmero
     {
         static void Main(string[] args)
         {
+            Console.WriteLine("--- Bem-vindo ao Programa ---");
+
             Random r = new Random(); // Define uma variável randomica
 
             int numeroCerto = r.Next(0, 100); // Define a variavel que ficará com algum valor entre 0 e 100
@@ -29,7 +31,7 @@ namespace AdivinharNúmero
                 else if (i > numeroCerto)
                 {
                     tentativas--;
-                    Console.WriteLine("\nMuito alto! Digite um número menor...");
+                    Console.WriteLine("\nNúmero alto! Digite um número menor...");
                     switch (tentativas)
                     {
                         case 1:
@@ -43,7 +45,7 @@ namespace AdivinharNúmero
                 else if (i < numeroCerto)
                 {
                     tentativas--;
-                    Console.WriteLine("\nMuito baixo! Digite um número maior...");
+                    Console.WriteLine("\nNúmero baixo! Digite um número maior...");
                     switch (tentativas)
                     {
                         case 1:
